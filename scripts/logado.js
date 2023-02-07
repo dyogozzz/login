@@ -7,14 +7,14 @@ logado.innerHTML = 'Olá' + ' ' + userLogged.nome + '!' + '<br>' + 'Este é um s
 function valid() {
     if(localStorage.getItem('token') == null){
     alert('Você precisa estar logado para acessar esse site!')
-    window.location.href = 'http://127.0.0.1:5500/login.html'
+    window.location.href = 'https://dyogozzz.github.io/login/login'
     }
 }
 
 function sair(){ 
     localStorage.removeItem('token')
     localStorage.removeItem('userLogged')
-    window.location.href ='http://127.0.0.1:5500/login.html'
+    window.location.href ='https://dyogozzz.github.io/login/login'
   }
 
  function fechaSite() {
