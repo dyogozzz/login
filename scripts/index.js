@@ -63,7 +63,7 @@ function cadastrar() {
     }, 2000)
 
     setTimeout(()=>{
-      window.location.href = 'http://127.0.0.1:5500/login.html'
+      window.location.href = 'https://dyogozzz.github.io/login/login'
     }, 3000)
   } else {
     msgError.setAttribute('style', 'display: block')
@@ -149,7 +149,7 @@ function entrar() {
   })
 
   if(usuario.value == userValid.usuario && senha.value == userValid.senha && usuario.value != '' && senha.value != ''){
-    window.location.href = 'http://127.0.0.1:5500/logado.html'
+    window.location.href = 'https://dyogozzz.github.io/login/logado'
 
     let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2)
     localStorage.setItem('token', token)
